@@ -53,7 +53,7 @@ function lose(userChoice, computerChoice){
 }
 
 function draw(userChoice, computerChoice){
-    const userChoice_div = document.getElementById(userChoice)
+    const userChoice_div = document.getElementById(userChoice);
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = `${convertToWord(userChoice)} é igual ${convertToWord(computerChoice)}. Empate.`;
