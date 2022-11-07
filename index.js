@@ -39,6 +39,7 @@ function win(userChoice, computerChoice){
 
 
 
+
 function lose(userChoice, computerChoice){
     const userChoice_div = document.getElementById(userChoice)
     computerScore++;
@@ -61,6 +62,7 @@ function draw(userChoice, computerChoice){
     setTimeout (function() { userChoice_div.classList.remove('gray-glow')}, 1000);
     console.log("draw")
 }
+
 
 
 
