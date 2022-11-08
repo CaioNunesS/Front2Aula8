@@ -83,8 +83,19 @@ function game(userChoice){
         case "pp":
         case "ss":
             draw(userChoice, computerChoice);
-            break;                       
+            break;  
+                                 
     }
+    if(userScore == 3){
+        userScore = 0
+        computerScore = 0
+        result_p.innerHTML = 'Parabens Você é o ganhador da rodada!';
+    }else if(computerScore == 3){
+        userScore = 0
+        computerScore = 0
+        result_p.innerHTML = 'Infelizmente, não foi dessa vez. Maquina ganhadora da rodada!';
+    }
+    
 }
 
 function main(){
